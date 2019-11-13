@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JMq-2p-30U">
-                                <rect key="frame" x="46" y="595.5" width="328" height="70.5"/>
+                                <rect key="frame" x="46" y="625.5" width="328" height="70.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70.5" id="9hh-GU-kLL"/>
@@ -26,7 +26,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m3C-Xq-tG1">
-                                <rect key="frame" x="46" y="684.5" width="328" height="71"/>
+                                <rect key="frame" x="46" y="714.5" width="328" height="71"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="85M-92-xmX"/>
@@ -36,46 +36,41 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="P4i-RL-ovp">
-                                <rect key="frame" x="44.5" y="235.5" width="325" height="325"/>
+                                <rect key="frame" x="44.5" y="205.5" width="325" height="385"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="9XG-Ms-ozR">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="325"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="385"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milk-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-8U-hRo">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="Ct4-EC-NK6"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Gld-iK-RG0"/>
-                                                    <constraint firstAttribute="height" constant="150" id="ba1-wx-Nv5"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="iAH-r0-7dk"/>
+                                                    <constraint firstAttribute="height" constant="180" id="kRO-TE-zp0"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milk-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-yX-hXm">
-                                                <rect key="frame" x="0.0" y="175" width="150" height="150"/>
+                                                <rect key="frame" x="0.0" y="205" width="150" height="180"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" constant="180" id="WQI-M8-WOu"/>
                                                     <constraint firstAttribute="width" constant="150" id="okB-vM-YzB"/>
-                                                    <constraint firstAttribute="height" constant="150" id="vPV-Fy-u2s"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Q13-2o-Xfa">
-                                        <rect key="frame" x="175" y="0.0" width="150" height="325"/>
+                                        <rect key="frame" x="175" y="0.0" width="150" height="385"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milk-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="KvT-sE-2Kz">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="QGw-KK-9IA"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="UJ4-XH-c4b"/>
-                                                    <constraint firstAttribute="height" constant="150" id="XEV-QB-gE1"/>
+                                                    <constraint firstAttribute="height" constant="180" id="T3x-9w-yIg"/>
                                                     <constraint firstAttribute="width" constant="150" id="h15-Ry-VP2"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milk-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="kBU-NM-42M">
-                                                <rect key="frame" x="0.0" y="175" width="150" height="150"/>
+                                                <rect key="frame" x="0.0" y="205" width="150" height="180"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="150" id="OWK-lJ-bmV"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="UW0-aW-0Nq"/>
+                                                    <constraint firstAttribute="height" constant="180" id="FAO-yv-C4o"/>
                                                     <constraint firstAttribute="width" constant="150" id="tDo-Rp-5V7"/>
                                                 </constraints>
                                             </imageView>
