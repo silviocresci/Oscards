@@ -13,10 +13,6 @@
 		6BAF86E0237BF5180068C85C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86DE237BF5180068C85C /* Main.storyboard */; };
 		6BAF86E2237BF5190068C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86E1237BF5190068C85C /* Assets.xcassets */; };
 		6BAF86E5237BF5190068C85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86E3237BF5190068C85C /* LaunchScreen.storyboard */; };
-		6BAF86F0237C09320068C85C /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86EC237C09310068C85C /* 3.jpg */; };
-		6BAF86F1237C09320068C85C /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86ED237C09320068C85C /* 2.jpg */; };
-		6BAF86F2237C09320068C85C /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86EE237C09320068C85C /* 1.png */; };
-		6BAF86F3237C09320068C85C /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86EF237C09320068C85C /* 4.png */; };
 		6BAF8719237C197B0068C85C /* ValidationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAF8718237C197B0068C85C /* ValidationPageViewController.swift */; };
 		6BAF871B237C1E690068C85C /* Milk-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF871A237C1E690068C85C /* Milk-01.png */; };
 /* End PBXBuildFile section */
@@ -30,10 +26,6 @@
 		6BAF86E1237BF5190068C85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BAF86E4237BF5190068C85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BAF86E6237BF5190068C85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BAF86EC237C09310068C85C /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3.jpg; path = ../../../Downloads/3.jpg; sourceTree = "<group>"; };
-		6BAF86ED237C09320068C85C /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2.jpg; path = ../../../Downloads/2.jpg; sourceTree = "<group>"; };
-		6BAF86EE237C09320068C85C /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../Downloads/1.png; sourceTree = "<group>"; };
-		6BAF86EF237C09320068C85C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = ../../../Downloads/4.png; sourceTree = "<group>"; };
 		6BAF8718237C197B0068C85C /* ValidationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationPageViewController.swift; sourceTree = "<group>"; };
 		6BAF871A237C1E690068C85C /* Milk-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Milk-01.png"; path = "../../../Downloads/Telegram Desktop/Milk-01.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,10 +60,6 @@
 		6BAF86D7237BF5180068C85C /* Oscards */ = {
 			isa = PBXGroup;
 			children = (
-				6BAF86EE237C09320068C85C /* 1.png */,
-				6BAF86ED237C09320068C85C /* 2.jpg */,
-				6BAF86EC237C09310068C85C /* 3.jpg */,
-				6BAF86EF237C09320068C85C /* 4.png */,
 				6BAF86D8237BF5180068C85C /* AppDelegate.swift */,
 				6BAF871A237C1E690068C85C /* Milk-01.png */,
 				6BAF86DA237BF5180068C85C /* SceneDelegate.swift */,
@@ -145,12 +133,8 @@
 			files = (
 				6BAF86E5237BF5190068C85C /* LaunchScreen.storyboard in Resources */,
 				6BAF871B237C1E690068C85C /* Milk-01.png in Resources */,
-				6BAF86F3237C09320068C85C /* 4.png in Resources */,
 				6BAF86E2237BF5190068C85C /* Assets.xcassets in Resources */,
-				6BAF86F1237C09320068C85C /* 2.jpg in Resources */,
-				6BAF86F2237C09320068C85C /* 1.png in Resources */,
 				6BAF86E0237BF5180068C85C /* Main.storyboard in Resources */,
-				6BAF86F0237C09320068C85C /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
