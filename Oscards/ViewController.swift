@@ -12,14 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-////        pic1.layer.borderWidth = 2
-////        pic1.layer.borderColor = UIColor.black.cgColor
-//        pic2.layer.borderWidth = 2
-//        pic2.layer.borderColor = UIColor.black.cgColor
-//        pic3.layer.borderWidth = 2
-//        pic3.layer.borderColor = UIColor.black.cgColor
-//        pic4.layer.borderWidth = 2
-//        pic4.layer.borderColor = UIColor.black.cgColor
+        
         textArea1.layer.borderWidth = 3
         textArea1.layer.borderColor = UIColor.darkGray.cgColor
         textArea2.layer.borderWidth = 3
@@ -37,7 +30,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var textArea1: UITextView!
     @IBOutlet weak var textArea2: UITextView!
     
-    @IBAction func validationButton(_ sender: UIButton) {
-    }
+   
 }
+class SecondViewController : UIViewController{
+    override func viewDidLoad() {
+        
+            super.viewDidLoad()
+        }
+    @IBOutlet weak var nav: UINavigationItem!
+}
+
 
