@@ -14,6 +14,14 @@
 		6BAF86E2237BF5190068C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86E1237BF5190068C85C /* Assets.xcassets */; };
 		6BAF86E5237BF5190068C85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86E3237BF5190068C85C /* LaunchScreen.storyboard */; };
 		6BAF8719237C197B0068C85C /* ValidationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BAF8718237C197B0068C85C /* ValidationPageViewController.swift */; };
+		D03B820A237D9166002D9AA4 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8202237D9165002D9AA4 /* GameSession.swift */; };
+		D03B820B237D9166002D9AA4 /* ShakePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8203237D9165002D9AA4 /* ShakePageController.swift */; };
+		D03B820C237D9166002D9AA4 /* TeamDefinitionPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8204237D9165002D9AA4 /* TeamDefinitionPageController.swift */; };
+		D03B820D237D9166002D9AA4 /* ShakePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8205237D9165002D9AA4 /* ShakePage.swift */; };
+		D03B820E237D9166002D9AA4 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8206237D9165002D9AA4 /* Team.swift */; };
+		D03B820F237D9166002D9AA4 /* GamePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8207237D9166002D9AA4 /* GamePageController.swift */; };
+		D03B8210237D9166002D9AA4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8208237D9166002D9AA4 /* Timer.swift */; };
+		D03B8211237D9166002D9AA4 /* ValidationPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8209237D9166002D9AA4 /* ValidationPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		6BAF86E4237BF5190068C85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BAF86E6237BF5190068C85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BAF8718237C197B0068C85C /* ValidationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationPageViewController.swift; sourceTree = "<group>"; };
+		D03B8202237D9165002D9AA4 /* GameSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		D03B8203237D9165002D9AA4 /* ShakePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakePageController.swift; sourceTree = "<group>"; };
+		D03B8204237D9165002D9AA4 /* TeamDefinitionPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDefinitionPageController.swift; sourceTree = "<group>"; };
+		D03B8205237D9165002D9AA4 /* ShakePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakePage.swift; sourceTree = "<group>"; };
+		D03B8206237D9165002D9AA4 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		D03B8207237D9166002D9AA4 /* GamePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePageController.swift; sourceTree = "<group>"; };
+		D03B8208237D9166002D9AA4 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		D03B8209237D9166002D9AA4 /* ValidationPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationPageController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,14 @@
 				6BAF86DA237BF5180068C85C /* SceneDelegate.swift */,
 				6BAF86DC237BF5180068C85C /* ViewController.swift */,
 				6BAF86DE237BF5180068C85C /* Main.storyboard */,
+				D03B8205237D9165002D9AA4 /* ShakePage.swift */,
+				D03B8206237D9165002D9AA4 /* Team.swift */,
+				D03B8208237D9166002D9AA4 /* Timer.swift */,
+				D03B8202237D9165002D9AA4 /* GameSession.swift */,
+				D03B8204237D9165002D9AA4 /* TeamDefinitionPageController.swift */,
+				D03B8207237D9166002D9AA4 /* GamePageController.swift */,
+				D03B8203237D9165002D9AA4 /* ShakePageController.swift */,
+				D03B8209237D9166002D9AA4 /* ValidationPageController.swift */,
 				6BAF86E1237BF5190068C85C /* Assets.xcassets */,
 				6BAF86E3237BF5190068C85C /* LaunchScreen.storyboard */,
 				6BAF8718237C197B0068C85C /* ValidationPageViewController.swift */,
@@ -141,9 +165,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D03B820E237D9166002D9AA4 /* Team.swift in Sources */,
+				D03B8211237D9166002D9AA4 /* ValidationPageController.swift in Sources */,
 				6BAF8719237C197B0068C85C /* ValidationPageViewController.swift in Sources */,
 				6BAF86DD237BF5180068C85C /* ViewController.swift in Sources */,
+				D03B820A237D9166002D9AA4 /* GameSession.swift in Sources */,
+				D03B820D237D9166002D9AA4 /* ShakePage.swift in Sources */,
+				D03B820C237D9166002D9AA4 /* TeamDefinitionPageController.swift in Sources */,
+				D03B820F237D9166002D9AA4 /* GamePageController.swift in Sources */,
+				D03B820B237D9166002D9AA4 /* ShakePageController.swift in Sources */,
 				6BAF86D9237BF5180068C85C /* AppDelegate.swift in Sources */,
+				D03B8210237D9166002D9AA4 /* Timer.swift in Sources */,
 				6BAF86DB237BF5180068C85C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
