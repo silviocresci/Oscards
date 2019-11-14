@@ -22,12 +22,12 @@ class ValidationPageController {
     }
     
     //Other teams don't validate the titles inserted. The team turn will stay at same position.
-    func noValidButtonPressed() {
+/*    func noValidButtonPressed() {
         /*
          
          
          
          */
     }
-    
+    */
 }
