@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,14 +41,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="9XG-Ms-ozR">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="385"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-8U-hRo">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk-01 " translatesAutoresizingMaskIntoConstraints="NO" id="aLd-8U-hRo">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="Ct4-EC-NK6"/>
                                                     <constraint firstAttribute="height" constant="180" id="kRO-TE-zp0"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-yX-hXm">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk-01 " translatesAutoresizingMaskIntoConstraints="NO" id="XOh-yX-hXm">
                                                 <rect key="frame" x="0.0" y="205" width="150" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="WQI-M8-WOu"/>
@@ -60,14 +60,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Q13-2o-Xfa">
                                         <rect key="frame" x="175" y="0.0" width="150" height="385"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="KvT-sE-2Kz">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk-01 " translatesAutoresizingMaskIntoConstraints="NO" id="KvT-sE-2Kz">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="T3x-9w-yIg"/>
                                                     <constraint firstAttribute="width" constant="150" id="h15-Ry-VP2"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="kBU-NM-42M">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk-01 " translatesAutoresizingMaskIntoConstraints="NO" id="kBU-NM-42M">
                                                 <rect key="frame" x="0.0" y="205" width="150" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="FAO-yv-C4o"/>
@@ -84,9 +84,13 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUd-4U-ADb">
-                                <rect key="frame" x="41" y="797" width="333" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUd-4U-ADb">
+                                <rect key="frame" x="46" y="801" width="333" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="333" id="C3e-ct-ODy"/>
+                                    <constraint firstAttribute="height" constant="50" id="q1Y-gI-2qH"/>
+                                </constraints>
                                 <state key="normal" title="Validation">
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
@@ -97,16 +101,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xUd-4U-ADb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="2wT-fK-7fN"/>
                             <constraint firstItem="P4i-RL-ovp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3l9-Pq-YGa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P4i-RL-ovp" secondAttribute="trailing" constant="44.5" id="AHv-5W-X6A"/>
                             <constraint firstItem="P4i-RL-ovp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="CMD-hp-8Zx"/>
                             <constraint firstItem="P4i-RL-ovp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44.5" id="OSv-8e-Nw6"/>
                             <constraint firstItem="m3C-Xq-tG1" firstAttribute="top" secondItem="JMq-2p-30U" secondAttribute="bottom" constant="18.5" id="Tag-Q3-K2q"/>
                             <constraint firstItem="JMq-2p-30U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="XnJ-EH-Uhj"/>
-                            <constraint firstItem="xUd-4U-ADb" firstAttribute="top" secondItem="m3C-Xq-tG1" secondAttribute="bottom" constant="41.5" id="ZsA-ci-Wpn"/>
+                            <constraint firstItem="xUd-4U-ADb" firstAttribute="leading" secondItem="m3C-Xq-tG1" secondAttribute="leading" id="Z1b-7I-GBi"/>
                             <constraint firstItem="JMq-2p-30U" firstAttribute="top" secondItem="P4i-RL-ovp" secondAttribute="bottom" constant="35" id="n1U-Sp-iFb"/>
                             <constraint firstItem="JMq-2p-30U" firstAttribute="trailing" secondItem="m3C-Xq-tG1" secondAttribute="trailing" id="ps8-Ja-at9"/>
+                            <constraint firstItem="xUd-4U-ADb" firstAttribute="top" secondItem="m3C-Xq-tG1" secondAttribute="bottom" constant="15.5" id="tCT-Yh-ONe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JMq-2p-30U" secondAttribute="trailing" constant="40" id="usw-pn-Un5"/>
                             <constraint firstItem="JMq-2p-30U" firstAttribute="leading" secondItem="m3C-Xq-tG1" secondAttribute="leading" id="wsi-cj-cZa"/>
                         </constraints>
@@ -157,6 +161,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="milk-01.png" width="150" height="180.24000549316406"/>
+        <image name="milk-01 " width="625" height="751"/>
     </resources>
 </document>
