@@ -177,12 +177,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4075" y="90"/>
+            <point key="canvasLocation" x="-107490" y="454"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Validation View Controller-->
         <scene sceneID="0iS-yA-azq">
             <objects>
-                <viewController id="rcC-dA-OA6" customClass="SecondViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rcC-dA-OA6" customClass="ValidationViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTS-sc-uSf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nx-Kg-uND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4843" y="90"/>
+            <point key="canvasLocation" x="-106577" y="454"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="snP-vt-LSd">
@@ -317,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cjc-K3-sZf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.753623188406" y="147.99107142857142"/>
+            <point key="canvasLocation" x="-109970" y="513"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bCc-u7-yPi">
@@ -335,12 +335,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APG-Rw-91f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="509" y="148"/>
+            <point key="canvasLocation" x="-111054" y="513"/>
         </scene>
-        <!--Rules View Controller-->
+        <!--Rules Page View Controller-->
         <scene sceneID="8Cf-b9-3ZJ">
             <objects>
-                <viewController id="MST-9u-km3" customClass="RulesViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MST-9u-km3" customClass="RulesPageViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AzO-vK-ibI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -379,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kgt-II-HqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.753623188406" y="892.63392857142856"/>
+            <point key="canvasLocation" x="-109970" y="1258"/>
         </scene>
         <!--Select View Controller-->
         <scene sceneID="nnH-9m-m7v">
@@ -580,7 +580,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1g-lX-cR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2537.68115942029" y="892.63392857142856"/>
+            <point key="canvasLocation" x="-109025" y="1258"/>
         </scene>
         <!--Shake View Controller-->
         <scene sceneID="sT5-Hu-tit">
@@ -617,7 +617,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25r-sY-qIL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3321.739130434783" y="892.63392857142856"/>
+            <point key="canvasLocation" x="-108241" y="1258"/>
         </scene>
         <!--Single Player View Controller-->
         <scene sceneID="XWi-Sy-pbZ">
@@ -627,7 +627,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Qpu-M8-ar1">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Qpu-M8-ar1">
                                 <rect key="frame" x="45" y="165" width="325" height="385"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="F6y-RI-cZw">
@@ -670,8 +670,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3o-sm-IXP">
-                                <rect key="frame" x="46" y="801" width="333" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3o-sm-IXP">
+                                <rect key="frame" x="43" y="712.5" width="333" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="333" id="3Up-fo-FEe"/>
@@ -681,7 +681,7 @@
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8dY-j2-p4G">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8dY-j2-p4G">
                                 <rect key="frame" x="43" y="626" width="328" height="71"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -695,7 +695,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Q3o-sm-IXP" firstAttribute="leading" secondItem="8dY-j2-p4G" secondAttribute="leading" id="KNu-yL-WWC"/>
+                            <constraint firstAttribute="bottom" secondItem="8dY-j2-p4G" secondAttribute="bottom" constant="199" id="QkM-K9-pwS"/>
+                            <constraint firstItem="8dY-j2-p4G" firstAttribute="top" secondItem="Qpu-M8-ar1" secondAttribute="bottom" constant="76" id="bTL-gf-CnU"/>
+                            <constraint firstItem="8dY-j2-p4G" firstAttribute="centerX" secondItem="Qpu-M8-ar1" secondAttribute="centerX" id="e16-iO-YGy"/>
+                            <constraint firstItem="8dY-j2-p4G" firstAttribute="centerX" secondItem="RQz-sO-QYW" secondAttribute="centerX" id="mwA-l3-mOQ"/>
                             <constraint firstItem="Q3o-sm-IXP" firstAttribute="top" secondItem="8dY-j2-p4G" secondAttribute="bottom" constant="15.5" id="wNe-h4-0oX"/>
+                            <constraint firstItem="8dY-j2-p4G" firstAttribute="leading" secondItem="K6V-Wc-bYL" secondAttribute="leading" constant="43" id="wY4-FL-WJq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K6V-Wc-bYL"/>
                     </view>
@@ -703,7 +708,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zV2-7o-HLK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3191" y="100"/>
+            <point key="canvasLocation" x="-108681" y="32"/>
         </scene>
     </scenes>
     <resources>
