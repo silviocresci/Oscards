@@ -23,6 +23,7 @@ class ValidationViewController : UIViewController{
     override func viewDidLoad() {
         
             super.viewDidLoad()
+        nav.setHidesBackButton(true, animated: true)
         view1.image = img1.image
         view2.image = img2.image
         view3.image = img3.image
@@ -32,4 +33,5 @@ class ValidationViewController : UIViewController{
         }
     
     @IBOutlet weak var nav: UINavigationItem!
+    
 }

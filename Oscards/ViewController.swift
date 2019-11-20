@@ -9,15 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var nav: UINavigationItem!
+    
     var time = 60
     var timeString = ""
     var timer = Timer()
+    var namePic : String = ""
     
+    var namePic2 = 0
+    var namePic3 = 0
+    var namePic4 = 0
+    var temp = 0
+
+        
+    var pics : Array<UIImage> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        for i in 1...61{
+            namePic = String(i)
+            pics.append(UIImage(named: namePic)!)
+        }
         
+        randPic()
+
+        pic1.image = pics[Int.random(in: 47 ..< 61)]
+        pic2.image = pics[namePic2]
+        pic3.image = pics[namePic3]
+        pic4.image = pics[namePic4]
+        
+        nav.setHidesBackButton(true, animated: true)
         textArea1.layer.borderWidth = 3
         textArea1.layer.borderColor = UIColor.darkGray.cgColor
         textArea2.layer.borderWidth = 3
@@ -46,6 +67,24 @@ class ViewController: UIViewController {
             timerArea.text = "0:\(timeString)"
         }
     }
+    
+    func randPic(){
+        namePic2 = Int.random(in: 0 ..< 47)
+        while(true){
+            namePic3 = Int.random(in: 0 ..< 47)
+            if(namePic3 != namePic2){
+                break
+            }
+        }
+        while(true){
+                   namePic4 = Int.random(in: 0 ..< 47)
+                   if(namePic4 != namePic2 && namePic4 != namePic3){
+                       break
+                   }
+               }
+
+    }
+    
     @IBOutlet weak var timerArea: UITextField!
     
     @IBOutlet weak var pic1: UIImageView!

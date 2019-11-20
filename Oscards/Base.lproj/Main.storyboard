@@ -41,14 +41,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="9XG-Ms-ozR">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="385"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drama" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-8U-hRo">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aLd-8U-hRo">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="Ct4-EC-NK6"/>
                                                     <constraint firstAttribute="height" constant="180" id="kRO-TE-zp0"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="syringe" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-yX-hXm">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-yX-hXm">
                                                 <rect key="frame" x="0.0" y="205" width="150" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="WQI-M8-WOu"/>
@@ -60,14 +60,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Q13-2o-Xfa">
                                         <rect key="frame" x="175" y="0.0" width="150" height="385"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pulp" translatesAutoresizingMaskIntoConstraints="NO" id="KvT-sE-2Kz">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KvT-sE-2Kz">
                                                 <rect key="frame" x="0.0" y="0.0" width="150" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="T3x-9w-yIg"/>
                                                     <constraint firstAttribute="width" constant="150" id="h15-Ry-VP2"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk-01 " translatesAutoresizingMaskIntoConstraints="NO" id="kBU-NM-42M">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kBU-NM-42M">
                                                 <rect key="frame" x="0.0" y="205" width="150" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="180" id="FAO-yv-C4o"/>
@@ -167,6 +167,7 @@
                         <outlet property="button2" destination="SSS-z4-Aue" id="Kc6-9S-qHs"/>
                         <outlet property="button3" destination="xCG-GD-0ff" id="wQX-6a-6dN"/>
                         <outlet property="button4" destination="rUa-z4-W8Q" id="xYy-LE-4d9"/>
+                        <outlet property="nav" destination="oNE-uj-4nC" id="qPS-bw-fC3"/>
                         <outlet property="pic1" destination="aLd-8U-hRo" id="kTU-i1-FMl"/>
                         <outlet property="pic2" destination="KvT-sE-2Kz" id="rKX-gU-F7g"/>
                         <outlet property="pic3" destination="XOh-yX-hXm" id="2gv-dU-Qur"/>
@@ -300,7 +301,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UYi-fm-ZMp"/>
                     <connections>
-                        <outlet property="nav" destination="UYi-fm-ZMp" id="ifs-dF-opf"/>
+                        <outlet property="nav" destination="UYi-fm-ZMp" id="bKj-7N-MI0"/>
                         <outlet property="text" destination="NQc-xj-Duv" id="BQ9-Pu-uFM"/>
                         <outlet property="view1" destination="f9d-hb-m93" id="OYz-8h-ZHx"/>
                         <outlet property="view2" destination="f5y-jj-aU6" id="KCY-G4-RA5"/>
@@ -795,12 +796,12 @@
     </scenes>
     <resources>
         <image name="check" width="500" height="500"/>
-        <image name="drama" width="150" height="180"/>
+        <image name="drama" width="203" height="196"/>
         <image name="milk-01 " width="625" height="751"/>
-        <image name="pulp" width="150" height="180"/>
+        <image name="pulp" width="203" height="196"/>
         <image name="scorsese" width="386" height="500"/>
         <image name="spielberg" width="353" height="500"/>
-        <image name="syringe" width="150" height="180"/>
+        <image name="syringe" width="203" height="196"/>
         <image name="tarantino" width="361" height="500"/>
         <image name="uncheck" width="512" height="512"/>
         <image name="woody" width="236" height="378"/>
