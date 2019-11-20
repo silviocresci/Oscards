@@ -20,7 +20,7 @@ class GameSession {
     
     private init() {
         self.numberTeams = 2
-        self.actualTurn = 1
+        self.actualTurn = 0
         self.moviesList = []
         self.cards = []
         self.teams = []
@@ -50,18 +50,18 @@ class GameSession {
     
     //This function return a random value from 1 to numberOfTeams
     //The return number will be the team's number that start the game
-    func getCasualTeamStarter() -> Int {
-        return 4 //Random Number
+    func setCasualTeamStarter() {
+        self.setActualTurn(turn: Int.random(in: 0 ..< self.numberTeams))  //Random Number
     }
     
     //This function return next team that have to play. This is the only one funtion that will be used on game to define the turn.
     func getNextTeamTurn() -> Int {
-        if(self.actualTurn == 4) {
-            self.actualTurn = 1
-            return self.actualTurn
+        self.actualTurn = self.actualTurn + 1
+        
+        if(self.actualTurn >= self.numberTeams) {
+            self.setActualTurn(turn: 0)
         }
         
-        self.actualTurn = self.actualTurn + 1
         return self.actualTurn
     }
     
@@ -79,9 +79,30 @@ class GameSession {
     }
     
     //This function will be called one time in phase of team definition (Probably in TeamDefinitionPageController -> buttonOkPressed)
-    func setNumberTeamsAndActualTurn(number: Int){
+    func setNumberTeamsAndActualTurn(number: Int, names: [String]){
         self.numberTeams = number
-        self.setActualTurn(turn: self.getCasualTeamStarter())
+        
+        for i in 0..<self.numberTeams {
+            let team = Team(nome: names[i])
+            self.teams.insert(team, at: i)
+        }
+    }
+    
+    func isMovieAlreadyUsed(title: String) -> Bool {
+        if self.moviesList.contains(title) {
+            return true
+        }
+        
+        return false
+    }
+    
+    func addUsedMovieList(title: String) {
+        self.moviesList.append(title)
+    }
+    
+    func clearMovieList() {
+        self.moviesList.removeAll()
     }
     
 }
+

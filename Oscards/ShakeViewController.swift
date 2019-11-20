@@ -12,11 +12,17 @@ class ShakeViewController : UIViewController{
     override func viewDidLoad() {
     
         super.viewDidLoad()
+        //Every time here, define the next team turn
+        let actualTeamNumber: Int = GameSession.singleton.getNextTeamTurn()
+        let actualTeam: Team = GameSession.singleton.getTeamByNumber(number: actualTeamNumber)
+        shakeTeamLabel.text = actualTeam.nameTeam
+        
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         performSegue(withIdentifier: "ViewController", sender: self)
     }
     
+    @IBOutlet weak var shakeTeamLabel: UITextField!
     @IBOutlet weak var shakeButton: UIButton!
 }

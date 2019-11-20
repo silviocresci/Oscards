@@ -62,6 +62,7 @@ class ViewController: UIViewController {
         if(time<10 && time >= 0){
         timerArea.text = "0:0\(timeString)"
         }else if (time == -1){
+            timer.invalidate()
             firstCheck()
         }else{
             timerArea.text = "0:\(timeString)"
@@ -101,8 +102,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
     @IBAction func validationButton(_ sender: UIButton) {
+        timer.invalidate()
+        
         firstCheck()
-        time = 1000
     }
     
     @IBAction func selectNumber(_ sender: UIButton) {

@@ -13,8 +13,9 @@ class SelectViewController : UIViewController{
 @IBOutlet var nums: [UIButton]!
 @IBOutlet weak var playButton: UIButton!
 
-var n : CGFloat = 0
-var check : CGFloat = 0
+    var n : CGFloat = 0                 //Number of team selected
+    var check : CGFloat = 0             //Number of team checked
+    var teamNamesArray: [String] = []   //Array with the team's names of the current Session of Game
 
 override func viewDidLoad() {
 
@@ -86,5 +87,34 @@ func enableButton(){
         
     }
 }
+    
+    @IBAction func playButtonPressed(_ sender: UIButton) {
+        
+        //Creating names array
+        if woodyTeamCheck.isSelected {
+            self.teamNamesArray.append("Woody Allen Team")
+        }
+        if spielbergTeamCheck.isSelected {
+            self.teamNamesArray.append("Steven Spielberg Team")
+        }
+        if scorseseTeamCheck.isSelected {
+            self.teamNamesArray.append("Martin Scorsese Team")
+        }
+        if tarantinoTeamCheck.isSelected {
+            self.teamNamesArray.append("Quentin Tarantino Team")
+        }
+        
+        //This function has be called one time in team definition page
+        GameSession.singleton.setNumberTeamsAndActualTurn(number: Int(self.n), names: self.teamNamesArray)
+        GameSession.singleton.setCasualTeamStarter()
+        
+    }
+    
+    @IBOutlet weak var woodyTeamCheck: UIButton!
+    @IBOutlet weak var spielbergTeamCheck: UIButton!
+    @IBOutlet weak var scorseseTeamCheck: UIButton!
+    @IBOutlet weak var tarantinoTeamCheck: UIButton!
+    
+
 
 }

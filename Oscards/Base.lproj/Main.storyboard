@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1j-tV-bxa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1j-tV-bxa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -577,6 +577,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="playButtonPressed:" destination="GIY-JE-xVF" eventType="touchUpInside" id="Xq8-GH-ljP"/>
                                     <segue destination="cXa-6t-hfn" kind="push" id="4Cd-Gd-BXR"/>
                                 </connections>
                             </button>
@@ -628,7 +629,11 @@
                     <navigationItem key="navigationItem" id="J70-JZ-1fg"/>
                     <connections>
                         <outlet property="playButton" destination="AzD-c5-o8C" id="PYG-Oh-2hg"/>
+                        <outlet property="scorseseTeamCheck" destination="8dZ-oe-Snp" id="2gG-XP-MCw"/>
                         <outlet property="selectButton" destination="eu5-0P-Jqu" id="kHt-Fl-dIW"/>
+                        <outlet property="spielbergTeamCheck" destination="1GZ-5X-cOE" id="j8a-ZD-avg"/>
+                        <outlet property="tarantinoTeamCheck" destination="XF9-17-xwQ" id="qb2-VB-DMK"/>
+                        <outlet property="woodyTeamCheck" destination="Dr4-yI-os4" id="koS-15-Pcp"/>
                         <outletCollection property="nums" destination="lz2-xu-rBD" collectionClass="NSMutableArray" id="lqu-rP-JTA"/>
                         <outletCollection property="nums" destination="FfY-ai-vZ7" collectionClass="NSMutableArray" id="SnU-yT-8Cn"/>
                         <outletCollection property="nums" destination="JC1-0z-saL" collectionClass="NSMutableArray" id="hZE-rN-04O"/>
@@ -672,6 +677,7 @@
                     <navigationItem key="navigationItem" id="bIb-EO-j8M"/>
                     <connections>
                         <outlet property="shakeButton" destination="3wo-zD-aqr" id="RW8-CH-Vej"/>
+                        <outlet property="shakeTeamLabel" destination="SvD-AP-rb1" id="Wc1-J3-ZEG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="25r-sY-qIL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
