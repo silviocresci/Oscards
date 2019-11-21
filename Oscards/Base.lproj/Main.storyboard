@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1j-tV-bxa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1j-tV-bxa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -201,16 +201,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NQc-xj-Duv">
-                                <rect key="frame" x="43" y="653" width="328" height="70.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70.5" id="P57-4f-FPD"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj2-ZU-QXG">
                                 <rect key="frame" x="43" y="766" width="150" height="50"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -286,20 +276,28 @@
                                     <constraint firstItem="yuc-Vy-v4D" firstAttribute="centerY" secondItem="di2-C7-CYg" secondAttribute="centerY" id="aNE-sr-ot6"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="at3-wd-Ud8">
+                                <rect key="frame" x="97" y="669" width="220" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Dt1-cx-O0p"/>
+                                    <constraint firstAttribute="height" constant="52" id="c8O-Ht-EWu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.38330882787704468" green="0.98786324262619019" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="Mj2-ZU-QXG" firstAttribute="leading" secondItem="NQc-xj-Duv" secondAttribute="leading" id="3je-IS-qPn"/>
                             <constraint firstItem="di2-C7-CYg" firstAttribute="top" secondItem="3ce-8v-7MO" secondAttribute="bottom" constant="8" id="45Y-5A-kAc"/>
-                            <constraint firstItem="NQc-xj-Duv" firstAttribute="trailing" secondItem="6KM-QJ-4JC" secondAttribute="trailing" id="D9F-Jp-Nzz"/>
                             <constraint firstItem="Mj2-ZU-QXG" firstAttribute="leading" secondItem="vge-T9-1VT" secondAttribute="leading" constant="43" id="DBv-eG-zOE"/>
-                            <constraint firstItem="NQc-xj-Duv" firstAttribute="centerX" secondItem="nTS-sc-uSf" secondAttribute="centerX" id="QoU-Pf-Sre"/>
                             <constraint firstItem="3ce-8v-7MO" firstAttribute="leading" secondItem="vge-T9-1VT" secondAttribute="leading" constant="114" id="Sdb-Tx-Iz3"/>
-                            <constraint firstItem="NQc-xj-Duv" firstAttribute="centerY" secondItem="nTS-sc-uSf" secondAttribute="centerY" constant="240.25" id="VU6-ha-CaE"/>
-                            <constraint firstItem="NQc-xj-Duv" firstAttribute="centerX" secondItem="3ce-8v-7MO" secondAttribute="centerX" id="fh7-uR-hde"/>
-                            <constraint firstItem="di2-C7-CYg" firstAttribute="trailing" secondItem="NQc-xj-Duv" secondAttribute="trailing" id="qyl-pa-Wd6"/>
+                            <constraint firstItem="at3-wd-Ud8" firstAttribute="top" secondItem="di2-C7-CYg" secondAttribute="bottom" constant="40" id="Yl8-1i-AyU"/>
+                            <constraint firstItem="3ce-8v-7MO" firstAttribute="centerX" secondItem="nTS-sc-uSf" secondAttribute="centerX" id="bgQ-hJ-9oA"/>
+                            <constraint firstItem="di2-C7-CYg" firstAttribute="trailing" secondItem="6KM-QJ-4JC" secondAttribute="trailing" id="eaa-Rb-2AD"/>
                             <constraint firstItem="vge-T9-1VT" firstAttribute="bottom" secondItem="Mj2-ZU-QXG" secondAttribute="bottom" constant="46" id="ru9-bD-r7j"/>
                             <constraint firstItem="6KM-QJ-4JC" firstAttribute="leading" secondItem="Mj2-ZU-QXG" secondAttribute="trailing" constant="28" id="uDl-sQ-fx5"/>
+                            <constraint firstItem="at3-wd-Ud8" firstAttribute="centerX" secondItem="nTS-sc-uSf" secondAttribute="centerX" id="vOF-sL-2ms"/>
                             <constraint firstItem="Mj2-ZU-QXG" firstAttribute="top" secondItem="6KM-QJ-4JC" secondAttribute="top" id="x0b-xM-S0t"/>
                             <constraint firstItem="3ce-8v-7MO" firstAttribute="top" secondItem="vge-T9-1VT" secondAttribute="top" constant="22" id="x84-lF-PeB"/>
                         </constraints>
@@ -308,7 +306,7 @@
                     <navigationItem key="navigationItem" id="UYi-fm-ZMp"/>
                     <connections>
                         <outlet property="nav" destination="UYi-fm-ZMp" id="bKj-7N-MI0"/>
-                        <outlet property="text" destination="NQc-xj-Duv" id="BQ9-Pu-uFM"/>
+                        <outlet property="text" destination="at3-wd-Ud8" id="oa3-th-gxS"/>
                         <outlet property="view1" destination="f9d-hb-m93" id="OYz-8h-ZHx"/>
                         <outlet property="view2" destination="f5y-jj-aU6" id="KCY-G4-RA5"/>
                         <outlet property="view3" destination="Pnr-yf-8kq" id="K9z-hc-sFv"/>
@@ -317,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1nx-Kg-uND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-117162" y="655"/>
+            <point key="canvasLocation" x="-117162.31884057973" y="654.91071428571422"/>
         </scene>
         <!--Score View Controller-->
         <scene sceneID="RJU-2p-Wxe">

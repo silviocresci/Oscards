@@ -26,14 +26,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        for i in 1...61{
+        for i in 1...72{
             namePic = String(i)
             pics.append(UIImage(named: namePic)!)
         }
         
         randPic()
 
-        pic1.image = pics[Int.random(in: 47 ..< 61)]
+        pic1.image = pics[Int.random(in: 63 ..< 73)]
         pic2.image = pics[namePic2]
         pic3.image = pics[namePic3]
         pic4.image = pics[namePic4]
@@ -70,15 +70,15 @@ class ViewController: UIViewController {
     }
     
     func randPic(){
-        namePic2 = Int.random(in: 0 ..< 47)
+        namePic2 = Int.random(in: 0 ..< 63)
         while(true){
-            namePic3 = Int.random(in: 0 ..< 47)
+            namePic3 = Int.random(in: 0 ..< 63)
             if(namePic3 != namePic2){
                 break
             }
         }
         while(true){
-                   namePic4 = Int.random(in: 0 ..< 47)
+                   namePic4 = Int.random(in: 0 ..< 63)
                    if(namePic4 != namePic2 && namePic4 != namePic3){
                        break
                    }

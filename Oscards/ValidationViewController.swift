@@ -19,7 +19,9 @@ class ValidationViewController : UIViewController{
     @IBOutlet weak var view3: UIImageView!
     @IBOutlet weak var view4: UIImageView!
     
-    @IBOutlet weak var text: UITextView!
+
+    @IBOutlet weak var text: UILabel!
+    
     override func viewDidLoad() {
         
             super.viewDidLoad()
