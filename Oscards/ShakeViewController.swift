@@ -23,6 +23,6 @@ class ShakeViewController : UIViewController{
         performSegue(withIdentifier: "ViewController", sender: self)
     }
     
-    @IBOutlet weak var shakeTeamLabel: UITextField!
+    @IBOutlet weak var shakeTeamLabel: UILabel!
     @IBOutlet weak var shakeButton: UIButton!
 }

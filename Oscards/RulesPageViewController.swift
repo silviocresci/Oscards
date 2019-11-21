@@ -16,7 +16,7 @@ override func viewDidLoad() {
     rightSwipe.direction = .right
     let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
     leftSwipe.direction = .left
-    
+    textArea.isEditable = false
     view.addGestureRecognizer(rightSwipe)
     view.addGestureRecognizer(leftSwipe)
 
