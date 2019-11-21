@@ -17,11 +17,11 @@ class ValidationPageController {
         let team: Team = GameSession.singleton.getTeamByNumber(number: teamNumber)
         
         //Team go on in the path
-        team.goNextStep()
+        team.addPoints()
         //Adding the title in used title list
         GameSession.singleton.addUsedMovieList(title: titleInserted)
         
-        print("Team " + String(teamNumber) + "position: " + String(team.getActualPosition()))
+        print("Team " + team.getNameTeam() + " position: " + String(team.getActualScore()))
         
     }
     

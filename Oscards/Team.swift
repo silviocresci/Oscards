@@ -10,10 +10,10 @@ import Foundation
 
 class Team {
     var nameTeam: String
-    var actualPosition: Int
+    var actualScore: Int
     
     init(nome: String) {
-        self.actualPosition = 1
+        self.actualScore = 1
         self.nameTeam = nome
     }
     
@@ -21,17 +21,17 @@ class Team {
         return self.nameTeam
     }
     
-    func getActualPosition() -> Int{
-        return self.actualPosition
+    func getActualScore() -> Int{
+        return self.actualScore
     }
     
-    func goNextStep() {
-        self.actualPosition = actualPosition + 1
+    func addPoints() {
+        self.actualScore = actualScore + 1
     }
     
-    func goBackStep() {
-        if self.actualPosition > 1 {
-            self.actualPosition = actualPosition - 1
+    func removePoints() {
+        if self.actualScore > 1 {
+            self.actualScore = actualScore - 1
         }
     }
     

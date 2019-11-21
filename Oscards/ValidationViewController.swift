@@ -34,4 +34,30 @@ class ValidationViewController : UIViewController{
     
     @IBOutlet weak var nav: UINavigationItem!
     
+    //Title inserted not valid for the other teams. The actual team doesn't get points
+    @IBAction func notValidButtonPressed(_ sender: Any) {
+        
+        showScoresPage()
+        
+    }
+    
+    //Title inserted is valid for all the teams. The actual team get points
+    @IBAction func validButtonPressed(_ sender: Any) {
+        
+//        let title = self.value(forKey: "title")
+//        let validationPageController = ValidationPageController.init()
+//        validationPageController.validButtonPressed(titleInserted: title as! String)
+
+        let validationPageController = ValidationPageController.init()
+        validationPageController.validButtonPressed(titleInserted: "The Joker")
+        
+        showScoresPage()
+        
+    }
+    
+    //This function show the ScoresPage
+    func showScoresPage() {
+        
+    }
+    
 }

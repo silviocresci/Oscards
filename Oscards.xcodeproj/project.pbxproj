@@ -27,6 +27,7 @@
 		D03B820D237D9166002D9AA4 /* ShakePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8205237D9165002D9AA4 /* ShakePage.swift */; };
 		D03B820E237D9166002D9AA4 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8206237D9165002D9AA4 /* Team.swift */; };
 		D03B820F237D9166002D9AA4 /* GamePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8207237D9166002D9AA4 /* GamePageController.swift */; };
+		D0991B292386BE87005F2F14 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0991B282386BE87005F2F14 /* ScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		D03B8205237D9165002D9AA4 /* ShakePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakePage.swift; sourceTree = "<group>"; };
 		D03B8206237D9165002D9AA4 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		D03B8207237D9166002D9AA4 /* GamePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePageController.swift; sourceTree = "<group>"; };
+		D0991B282386BE87005F2F14 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				6BAF86DA237BF5180068C85C /* SceneDelegate.swift */,
 				6BAF86DC237BF5180068C85C /* ViewController.swift */,
 				6B27FDDF2383E7B3004E9E31 /* ShakeViewController.swift */,
+				D0991B282386BE87005F2F14 /* ScoreViewController.swift */,
 				6BAF86DE237BF5180068C85C /* Main.storyboard */,
 				6B27FDE323840A01004E9E31 /* LoseViewController.swift */,
 				6B27FDE12383E858004E9E31 /* HomeViewController.swift */,
@@ -197,6 +200,7 @@
 				D01B008E23858B1200F9D692 /* ValidationPageController.swift in Sources */,
 				6BAF86DB237BF5180068C85C /* SceneDelegate.swift in Sources */,
 				6B27FDE02383E7B3004E9E31 /* ShakeViewController.swift in Sources */,
+				D0991B292386BE87005F2F14 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
