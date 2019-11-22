@@ -197,8 +197,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var pic4: UIImageView!
     
     
-    @IBOutlet weak var textArea1: UITextView!
-    @IBOutlet weak var textArea2: UITextView!
+    @IBOutlet weak var textArea1: UITextField!
+    @IBOutlet weak var textArea2: UITextField!
+    
     
     @IBAction func validationButton(_ sender: UIButton) {
         timer.invalidate()
