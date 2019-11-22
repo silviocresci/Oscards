@@ -21,11 +21,24 @@ class ViewController: UIViewController {
     var namePic4 = 0
     var temp = 0
 
-        
+    var pic1Selected = false
+    var pic2Selected = false
+    var pic3Selected = false
+    var pic4Selected = false
+
     var pics : Array<UIImage> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+
+
+        
         for i in 1...72{
             namePic = String(i)
             pics.append(UIImage(named: namePic)!)
@@ -33,7 +46,7 @@ class ViewController: UIViewController {
         
         randPic()
 
-        pic1.image = pics[Int.random(in: 63 ..< 73)]
+        pic1.image = pics[Int.random(in: 63 ..< 72)]
         pic2.image = pics[namePic2]
         pic3.image = pics[namePic3]
         pic4.image = pics[namePic4]
@@ -43,9 +56,99 @@ class ViewController: UIViewController {
         textArea1.layer.borderColor = UIColor.darkGray.cgColor
         textArea2.layer.borderWidth = 3
         textArea2.layer.borderColor = UIColor.darkGray.cgColor
+        
                 
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.action), userInfo: nil, repeats: true)
+        
+        let tapGestureRecognizer1 = UITapGestureRecognizer(target: self, action: #selector(imageTapped1(tapGestureRecognizer:)))
+        pic1.isUserInteractionEnabled = true
+        pic1.addGestureRecognizer(tapGestureRecognizer1)
+        let tapGestureRecognizer2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped2(tapGestureRecognizer:)))
+        pic2.isUserInteractionEnabled = true
+        pic2.addGestureRecognizer(tapGestureRecognizer2)
+        let tapGestureRecognizer3 = UITapGestureRecognizer(target: self, action: #selector(imageTapped3(tapGestureRecognizer:)))
+        pic3.isUserInteractionEnabled = true
+        pic3.addGestureRecognizer(tapGestureRecognizer3)
+        let tapGestureRecognizer4 = UITapGestureRecognizer(target: self, action: #selector(imageTapped4(tapGestureRecognizer:)))
+        pic4.isUserInteractionEnabled = true
+        pic4.addGestureRecognizer(tapGestureRecognizer4)
+        
+        
     }
+    
+    @objc func imageTapped1(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        _ = tapGestureRecognizer.view as! UIImageView
+        
+        if(pic1Selected==false){
+        pic1.layer.borderWidth = 5
+        pic1.layer.borderColor = UIColor.green.cgColor
+        pic1Selected = true
+        }else{
+            pic1.layer.borderWidth = 0
+            pic1Selected = false
+        }
+    }
+    
+    @objc func imageTapped2(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        _ = tapGestureRecognizer.view as! UIImageView
+        if(pic2Selected==false){
+        pic2.layer.borderWidth = 5
+        pic2.layer.borderColor = UIColor.green.cgColor
+        pic2Selected = true
+        }else{
+            pic2.layer.borderWidth = 0
+            pic2Selected = false
+        }
+        
+    }
+    
+    @objc func imageTapped3(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        _ = tapGestureRecognizer.view as! UIImageView
+        if(pic3Selected==false){
+        pic3.layer.borderWidth = 5
+        pic3.layer.borderColor = UIColor.green.cgColor
+        pic3Selected = true
+        }else{
+            pic3.layer.borderWidth = 0
+            pic3Selected = false
+        }
+    }
+    
+    @objc func imageTapped4(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        _ = tapGestureRecognizer.view as! UIImageView
+        if(pic4Selected==false){
+        pic4.layer.borderWidth = 5
+        pic4.layer.borderColor = UIColor.green.cgColor
+        pic4Selected = true
+        }else{
+            pic4.layer.borderWidth = 0
+            pic4Selected = false
+        }
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "ValidationPage"){
             (segue.destination as! ValidationViewController).solution = "\(textArea1.text ?? "")"
@@ -70,15 +173,15 @@ class ViewController: UIViewController {
     }
     
     func randPic(){
-        namePic2 = Int.random(in: 0 ..< 63)
+        namePic2 = Int.random(in: 0 ..< 62)
         while(true){
-            namePic3 = Int.random(in: 0 ..< 63)
+            namePic3 = Int.random(in: 0 ..< 62)
             if(namePic3 != namePic2){
                 break
             }
         }
         while(true){
-                   namePic4 = Int.random(in: 0 ..< 63)
+                   namePic4 = Int.random(in: 0 ..< 62)
                    if(namePic4 != namePic2 && namePic4 != namePic3){
                        break
                    }
@@ -87,7 +190,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBOutlet weak var timerArea: UILabel!
+    @IBOutlet weak var timerArea: UITextField!
     @IBOutlet weak var pic1: UIImageView!
     @IBOutlet weak var pic2: UIImageView!
     @IBOutlet weak var pic3: UIImageView!
@@ -97,23 +200,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var textArea1: UITextView!
     @IBOutlet weak var textArea2: UITextView!
     
-    @IBOutlet weak var button1: UIButton!
-    @IBOutlet weak var button2: UIButton!
-    @IBOutlet weak var button3: UIButton!
-    @IBOutlet weak var button4: UIButton!
     @IBAction func validationButton(_ sender: UIButton) {
         timer.invalidate()
         
         firstCheck()
     }
-    
-    @IBAction func selectNumber(_ sender: UIButton) {
-        button1.setTitleColor(.black, for: .normal)
-        button2.setTitleColor(.black, for: .normal)
-        button3.setTitleColor(.black, for: .normal)
-        button4.setTitleColor(.black, for: .normal)
-        
-        sender.setTitleColor(.green, for: .normal)}
     
     func firstCheck() {
         if (textArea1.text == textArea2.text){
