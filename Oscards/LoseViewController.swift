@@ -18,6 +18,16 @@ class LoseViewController : UIViewController{
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          navigationController?.setNavigationBarHidden(true, animated: animated)
+      }
+
+//      override func viewWillDisappear(_ animated: Bool) {
+//          super.viewWillDisappear(animated)
+//          navigationController?.setNavigationBarHidden(false, animated: animated)
+//      }
+    
     @IBAction func scoresButtonPressed(_ sender: Any) {
         let newViewController: ScoreViewController = storyboard?.instantiateViewController(withIdentifier: "ScoreViewController") as! ScoreViewController
         self.navigationController?.pushViewController(newViewController, animated: true)
