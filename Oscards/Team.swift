@@ -13,7 +13,7 @@ class Team {
     var actualScore: Int
     
     init(nome: String) {
-        self.actualScore = 1
+        self.actualScore = 0
         self.nameTeam = nome
     }
     

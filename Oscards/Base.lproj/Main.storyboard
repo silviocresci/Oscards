@@ -61,6 +61,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1:00" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ivn-DV-q1L">
                                 <rect key="frame" x="159" y="102" width="97" height="46"/>
                                 <color key="backgroundColor" red="0.36791216920000003" green="0.66798158620000003" blue="0.84328448830000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -139,14 +140,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Woody Team" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ce-8v-7MO">
-                                <rect key="frame" x="114" y="110" width="186" height="126"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Woody Team" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ce-8v-7MO">
+                                <rect key="frame" x="70" y="110" width="271" height="126"/>
                                 <color key="backgroundColor" red="0.36791216920000003" green="0.66798158620000003" blue="0.84328448830000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="126" id="d8M-7s-lLd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mj2-ZU-QXG">
@@ -231,7 +232,7 @@
                                     <constraint firstAttribute="height" constant="52" id="c8O-Ht-EWu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -239,9 +240,9 @@
                         <constraints>
                             <constraint firstItem="di2-C7-CYg" firstAttribute="top" secondItem="3ce-8v-7MO" secondAttribute="bottom" constant="8" id="45Y-5A-kAc"/>
                             <constraint firstItem="Mj2-ZU-QXG" firstAttribute="leading" secondItem="vge-T9-1VT" secondAttribute="leading" constant="43" id="DBv-eG-zOE"/>
-                            <constraint firstItem="3ce-8v-7MO" firstAttribute="leading" secondItem="vge-T9-1VT" secondAttribute="leading" constant="114" id="Sdb-Tx-Iz3"/>
+                            <constraint firstItem="3ce-8v-7MO" firstAttribute="leading" secondItem="vge-T9-1VT" secondAttribute="leading" constant="70" id="Sdb-Tx-Iz3"/>
                             <constraint firstItem="at3-wd-Ud8" firstAttribute="top" secondItem="di2-C7-CYg" secondAttribute="bottom" constant="40" id="Yl8-1i-AyU"/>
-                            <constraint firstItem="3ce-8v-7MO" firstAttribute="centerX" secondItem="nTS-sc-uSf" secondAttribute="centerX" id="bgQ-hJ-9oA"/>
+                            <constraint firstItem="3ce-8v-7MO" firstAttribute="centerX" secondItem="nTS-sc-uSf" secondAttribute="centerX" constant="-1.5" id="bgQ-hJ-9oA"/>
                             <constraint firstItem="di2-C7-CYg" firstAttribute="trailing" secondItem="6KM-QJ-4JC" secondAttribute="trailing" id="eaa-Rb-2AD"/>
                             <constraint firstItem="vge-T9-1VT" firstAttribute="bottom" secondItem="Mj2-ZU-QXG" secondAttribute="bottom" constant="46" id="ru9-bD-r7j"/>
                             <constraint firstItem="6KM-QJ-4JC" firstAttribute="leading" secondItem="Mj2-ZU-QXG" secondAttribute="trailing" constant="28" id="uDl-sQ-fx5"/>
@@ -735,6 +736,7 @@
                                 <rect key="frame" x="68" y="203" width="279" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36791216920000003" green="0.66798158620000003" blue="0.84328448830000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="37"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>

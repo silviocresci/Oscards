@@ -14,6 +14,7 @@ class ValidationViewController : UIViewController{
     var img3 : UIImageView!
     var img4 : UIImageView!
 
+
     @IBOutlet weak var teamLabel: UILabel!
     @IBOutlet weak var view1: UIImageView!
     @IBOutlet weak var view2: UIImageView!
@@ -30,11 +31,11 @@ class ValidationViewController : UIViewController{
         teamLabel.text = actualTeam.nameTeam + " wrote"
         
         nav.setHidesBackButton(true, animated: true)
-//        view1.image = img1.image
-//        view2.image = img2.image
-//        view3.image = img3.image
-//        view4.image = img4.image
-//        text.text = solution
+        view1.image = img1.image
+        view2.image = img2.image
+        view3.image = img3.image
+        view4.image = img4.image
+        text.text = solution
         
         }
     override func viewWillAppear(_ animated: Bool) {
@@ -62,8 +63,8 @@ class ValidationViewController : UIViewController{
 //        validationPageController.validButtonPressed(titleInserted: title as! String)
 
         let validationPageController = ValidationPageController.init()
-        let title = self.value(forKey: "title")
-        validationPageController.validButtonPressed(titleInserted: title as! String)
+//        let title = self.value(forKey: "title")
+        validationPageController.validButtonPressed(titleInserted: solution)
         
         showScoresPage()
         

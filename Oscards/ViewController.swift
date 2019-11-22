@@ -160,11 +160,12 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "ValidationPage"){
-            (segue.destination as! ValidationViewController).solution = "\(textArea1.text ?? "")"
+//            (segue.destination as! ValidationViewController).solution = "\(textArea1.text ?? "")"
             (segue.destination as! ValidationViewController).img1 = pic1
             (segue.destination as! ValidationViewController).img2 = pic2
             (segue.destination as! ValidationViewController).img3 = pic3
             (segue.destination as! ValidationViewController).img4 = pic4
+            (segue.destination as! ValidationViewController).solution = textArea1.text?.uppercased()
 
         }
     }
@@ -230,21 +231,21 @@ class ViewController: UIViewController {
         if gamePageController.validationButtonPressed(title1: self.textArea1.text!, title2: self.textArea2.text!) {
                     
             //Same Titles and not used before. Show ValidationView
-            let newViewController: ValidationViewController = storyboard?.instantiateViewController(withIdentifier: "ValidationViewController") as! ValidationViewController
-            newViewController.setValue(self.textArea1.text?.uppercased(), forKey: "title")
+//            let newViewController: ValidationViewController = storyboard?.instantiateViewController(withIdentifier: "ValidationViewController") as! ValidationViewController
+//            newViewController.setValue(self.textArea1.text?.uppercased(), forKey: "title")
             //            newViewController.setValue(String(self.namePic), forKey: "pic1")
             //            newViewController.setValue(String(self.namePic2), forKey: "pic2")
             //            newViewController.setValue(String(self.namePic3), forKey: "pic3")
             //            newViewController.setValue(String(self.namePic4), forKey: "pic4")
                     
-            self.navigationController?.pushViewController(newViewController, animated: true)
-                    
+//            self.navigationController?.pushViewController(newViewController, animated: true)
+                    performSegue(withIdentifier: "ValidationPage", sender: textArea1.text)
         }else{
-                    
+                    performSegue(withIdentifier: "Lose", sender: self)
             //Titles already used or different. Show LoseView
-            let newViewController: LoseViewController = storyboard?.instantiateViewController(withIdentifier: "LoseViewController") as! LoseViewController
-            self.navigationController?.pushViewController(newViewController, animated: true)
-                    
+//            let newViewController: LoseViewController = storyboard?.instantiateViewController(withIdentifier: "LoseViewController") as! LoseViewController
+//            self.navigationController?.pushViewController(newViewController, animated: true)
+//
         }
     }
     
