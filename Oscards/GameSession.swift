@@ -13,6 +13,7 @@ class GameSession {
     static let singleton = GameSession()
     
     var numberTeams: Int            // Number of teams in game
+    var finalScore: Int             // Score to Win
     var actualTurn: Int             // Number of Team Turn
     var moviesList: [String]        // Movies already used in this Game
     var teams: [Team]               // Teams in game
@@ -21,6 +22,9 @@ class GameSession {
     private init() {
         self.numberTeams = 2
         self.actualTurn = 0
+        
+        self.finalScore = 5
+        
         self.moviesList = []
         self.cards = []
         self.teams = []
@@ -104,5 +108,9 @@ class GameSession {
         self.moviesList.removeAll()
     }
     
+    func setFinalScore(score: Int) {
+        self.finalScore = score
+    }
 }
+
 

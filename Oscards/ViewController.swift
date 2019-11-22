@@ -207,11 +207,34 @@ class ViewController: UIViewController {
     }
     
     func firstCheck() {
-        if (textArea1.text == textArea2.text){
+/*      if (textArea1.text == textArea2.text){
             performSegue(withIdentifier: "ValidationPage", sender: textArea1.text)
         }
         else{
             performSegue(withIdentifier: "Lose", sender: self)
+        }
+*/
+                
+        let gamePageController: GamePageController = GamePageController.init()
+                
+        if gamePageController.validationButtonPressed(title1: self.textArea1.text!, title2: self.textArea2.text!) {
+                    
+            //Same Titles and not used before. Show ValidationView
+            let newViewController: ValidationViewController = storyboard?.instantiateViewController(withIdentifier: "ValidationViewController") as! ValidationViewController
+            newViewController.setValue(self.textArea1.text?.uppercased(), forKey: "title")
+            //            newViewController.setValue(String(self.namePic), forKey: "pic1")
+            //            newViewController.setValue(String(self.namePic2), forKey: "pic2")
+            //            newViewController.setValue(String(self.namePic3), forKey: "pic3")
+            //            newViewController.setValue(String(self.namePic4), forKey: "pic4")
+                    
+            self.navigationController?.pushViewController(newViewController, animated: true)
+                    
+        }else{
+                    
+            //Titles already used or different. Show LoseView
+            let newViewController: LoseViewController = storyboard?.instantiateViewController(withIdentifier: "LoseViewController") as! LoseViewController
+            self.navigationController?.pushViewController(newViewController, animated: true)
+                    
         }
     }
     

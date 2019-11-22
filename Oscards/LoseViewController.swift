@@ -8,8 +8,18 @@
 
 import UIKit
 class LoseViewController : UIViewController{
-override func viewDidLoad() {
+    @IBOutlet weak var teamLabel: UILabel!
     
+    override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let actualTeam: Team = GameSession.singleton.getTeamByNumber(number: GameSession.singleton.actualTurn)
+        teamLabel.text = actualTeam.nameTeam + " wrote different or already used titles."
+        
+    }
+    
+    @IBAction func scoresButtonPressed(_ sender: Any) {
+        let newViewController: ScoreViewController = storyboard?.instantiateViewController(withIdentifier: "ScoreViewController") as! ScoreViewController
+        self.navigationController?.pushViewController(newViewController, animated: true)
     }
 }

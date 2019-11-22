@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1j-tV-bxa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1j-tV-bxa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -138,7 +138,7 @@
         <!--Validation View Controller-->
         <scene sceneID="0iS-yA-azq">
             <objects>
-                <viewController id="rcC-dA-OA6" customClass="ValidationViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ValidationViewController" id="rcC-dA-OA6" customClass="ValidationViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTS-sc-uSf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -258,6 +258,7 @@
                     <navigationItem key="navigationItem" id="UYi-fm-ZMp"/>
                     <connections>
                         <outlet property="nav" destination="UYi-fm-ZMp" id="bKj-7N-MI0"/>
+                        <outlet property="teamLabel" destination="3ce-8v-7MO" id="DZ2-uj-K8f"/>
                         <outlet property="text" destination="at3-wd-Ud8" id="oa3-th-gxS"/>
                         <outlet property="view1" destination="f9d-hb-m93" id="OYz-8h-ZHx"/>
                         <outlet property="view2" destination="f5y-jj-aU6" id="KCY-G4-RA5"/>
@@ -272,7 +273,7 @@
         <!--Score View Controller-->
         <scene sceneID="RJU-2p-Wxe">
             <objects>
-                <viewController id="eN9-Cg-YOi" customClass="ScoreViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScoreViewController" id="eN9-Cg-YOi" customClass="ScoreViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sRx-a9-hDE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -362,6 +363,9 @@
                                         <state key="normal" title="Continue">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="continueButtonPressed:" destination="eN9-Cg-YOi" eventType="touchUpInside" id="t6C-30-CU7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -373,6 +377,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ct6-30-ytH"/>
                     </view>
+                    <connections>
+                        <outlet property="roundsLabel" destination="m1u-Lb-Yfi" id="LCi-73-WhA"/>
+                        <outlet property="teamName1" destination="PkL-Eo-opK" id="9zG-VT-Ag6"/>
+                        <outlet property="teamName2" destination="LPc-R1-SBe" id="2Wd-Kx-YFI"/>
+                        <outlet property="teamName3" destination="Edj-iW-eh1" id="quJ-pN-GYC"/>
+                        <outlet property="teamName4" destination="WDD-Kp-Vm7" id="4GS-tW-x5m"/>
+                        <outlet property="teamScore1" destination="L1d-Vr-U0J" id="4rF-MB-PSl"/>
+                        <outlet property="teamScore2" destination="W8i-zX-6zy" id="OWp-Z6-1e6"/>
+                        <outlet property="teamScore3" destination="aPe-Cu-w4b" id="lBZ-wG-Qwf"/>
+                        <outlet property="teamScore4" destination="j14-VW-ov1" id="Dky-Gd-8Kd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19y-4G-Ybf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -711,7 +726,7 @@
         <!--Shake View Controller-->
         <scene sceneID="sT5-Hu-tit">
             <objects>
-                <viewController id="cXa-6t-hfn" customClass="ShakeViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShakeViewController" id="cXa-6t-hfn" customClass="ShakeViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X92-pG-svg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -843,7 +858,7 @@
         <!--Lose View Controller-->
         <scene sceneID="uFN-iK-8yV">
             <objects>
-                <viewController id="Aji-Gq-vvh" customClass="LoseViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoseViewController" id="Aji-Gq-vvh" customClass="LoseViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nzf-xF-kXU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -864,6 +879,9 @@
                                         <state key="normal" title="Scores">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="scoresButtonPressed:" destination="Aji-Gq-vvh" eventType="touchUpInside" id="aiP-ZU-Zop"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -879,6 +897,9 @@
                         <viewLayoutGuide key="safeArea" id="iDI-fz-7SX"/>
                     </view>
                     <navigationItem key="navigationItem" id="zEb-vr-6DC"/>
+                    <connections>
+                        <outlet property="teamLabel" destination="8Rg-Ic-ZTG" id="6yy-Zc-8Te"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q6r-Sp-mBX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
