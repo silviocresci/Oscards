@@ -569,7 +569,7 @@
                                     <constraint firstAttribute="width" constant="100" id="2ds-sv-Yfr"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr4-yI-os4">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr4-yI-os4">
                                 <rect key="frame" x="274" y="247" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7mn-oQ-asT"/>
@@ -581,7 +581,7 @@
                                     <action selector="checkBoxTapped:" destination="GIY-JE-xVF" eventType="touchUpInside" id="oPy-N1-bvy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GZ-5X-cOE">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GZ-5X-cOE">
                                 <rect key="frame" x="274" y="379" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Vab-T8-1nX"/>
@@ -594,7 +594,7 @@
                                     <action selector="checkBoxTapped:" destination="GIY-JE-xVF" eventType="touchUpInside" id="KKo-B8-zFf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dZ-oe-Snp">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8dZ-oe-Snp">
                                 <rect key="frame" x="274" y="501" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="b4y-Zv-orb"/>
@@ -606,7 +606,7 @@
                                     <action selector="checkBoxTapped:" destination="GIY-JE-xVF" eventType="touchUpInside" id="Ikk-63-oe6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF9-17-xwQ">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF9-17-xwQ">
                                 <rect key="frame" x="274" y="636" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9EZ-X2-kBX"/>
@@ -618,21 +618,21 @@
                                     <action selector="checkBoxTapped:" destination="GIY-JE-xVF" eventType="touchUpInside" id="Gth-ik-ctx"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woody" translatesAutoresizingMaskIntoConstraints="NO" id="WX5-xU-J8F">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woody" translatesAutoresizingMaskIntoConstraints="NO" id="WX5-xU-J8F">
                                 <rect key="frame" x="43" y="222" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="YdG-h9-Nwi"/>
                                     <constraint firstAttribute="height" constant="100" id="gFX-xb-ZZm"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scorsese" translatesAutoresizingMaskIntoConstraints="NO" id="S0I-y7-S4M">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scorsese" translatesAutoresizingMaskIntoConstraints="NO" id="S0I-y7-S4M">
                                 <rect key="frame" x="47.5" y="476" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="BqQ-y0-km1"/>
                                     <constraint firstAttribute="width" constant="100" id="gdo-2q-PqZ"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarantino" translatesAutoresizingMaskIntoConstraints="NO" id="jIB-Qv-6Bd">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tarantino" translatesAutoresizingMaskIntoConstraints="NO" id="jIB-Qv-6Bd">
                                 <rect key="frame" x="47.5" y="611" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="i6F-we-NLI"/>
@@ -651,7 +651,7 @@
                                     <segue destination="cXa-6t-hfn" kind="push" id="4Cd-Gd-BXR"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spielberg" translatesAutoresizingMaskIntoConstraints="NO" id="lXc-Sb-bVx">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spielberg" translatesAutoresizingMaskIntoConstraints="NO" id="lXc-Sb-bVx">
                                 <rect key="frame" x="47.5" y="354" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="JOC-U5-xeC"/>
@@ -706,10 +706,14 @@
                     <connections>
                         <outlet property="playButton" destination="AzD-c5-o8C" id="PYG-Oh-2hg"/>
                         <outlet property="scorseseTeamCheck" destination="8dZ-oe-Snp" id="2gG-XP-MCw"/>
+                        <outlet property="scorseseTeamPic" destination="S0I-y7-S4M" id="ngp-bh-jYL"/>
                         <outlet property="selectButton" destination="eu5-0P-Jqu" id="kHt-Fl-dIW"/>
                         <outlet property="spielbergTeamCheck" destination="1GZ-5X-cOE" id="j8a-ZD-avg"/>
+                        <outlet property="spielbergTeamPic" destination="lXc-Sb-bVx" id="LTQ-zK-9BZ"/>
                         <outlet property="tarantinoTeamCheck" destination="XF9-17-xwQ" id="qb2-VB-DMK"/>
+                        <outlet property="tarantinoTeamPic" destination="jIB-Qv-6Bd" id="WSE-9n-hfQ"/>
                         <outlet property="woodyTeamCheck" destination="Dr4-yI-os4" id="koS-15-Pcp"/>
+                        <outlet property="woodyTeamPic" destination="WX5-xU-J8F" id="Sus-Ma-zki"/>
                         <outletCollection property="nums" destination="lz2-xu-rBD" collectionClass="NSMutableArray" id="lqu-rP-JTA"/>
                         <outletCollection property="nums" destination="FfY-ai-vZ7" collectionClass="NSMutableArray" id="SnU-yT-8Cn"/>
                         <outletCollection property="nums" destination="JC1-0z-saL" collectionClass="NSMutableArray" id="hZE-rN-04O"/>

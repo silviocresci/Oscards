@@ -47,6 +47,15 @@ enum num : String {
                    self.view.layoutIfNeeded()
                })
            }
+    woodyTeamCheck.isHidden = false
+    spielbergTeamCheck.isHidden = false
+    scorseseTeamCheck.isHidden = false
+    tarantinoTeamCheck.isHidden = false
+    woodyTeamPic.isHidden = false
+    spielbergTeamPic.isHidden = false
+    scorseseTeamPic.isHidden = false
+    tarantinoTeamPic.isHidden = false
+    
     if (n == .n2 ){
         selectButton.setTitle("2", for: .normal)
         self.n = 2
@@ -115,6 +124,10 @@ func enableButton(){
     @IBOutlet weak var scorseseTeamCheck: UIButton!
     @IBOutlet weak var tarantinoTeamCheck: UIButton!
     
-
+    @IBOutlet weak var woodyTeamPic: UIImageView!
+    @IBOutlet weak var spielbergTeamPic: UIImageView!
+    @IBOutlet weak var scorseseTeamPic: UIImageView!
+    @IBOutlet weak var tarantinoTeamPic: UIImageView!
+    
 
 }
