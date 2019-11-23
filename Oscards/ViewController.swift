@@ -52,10 +52,10 @@ class ViewController: UIViewController {
         pic4.image = pics[namePic4]
         
         nav.setHidesBackButton(true, animated: true)
-        textArea1.layer.borderWidth = 3
-        textArea1.layer.borderColor = UIColor.darkGray.cgColor
-        textArea2.layer.borderWidth = 3
-        textArea2.layer.borderColor = UIColor.darkGray.cgColor
+//        textArea1.layer.borderWidth = 3
+//        textArea1.layer.borderColor = UIColor.darkGray.cgColor
+//        textArea2.layer.borderWidth = 3
+//        textArea2.layer.borderColor = UIColor.darkGray.cgColor
         
                 
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.action), userInfo: nil, repeats: true)

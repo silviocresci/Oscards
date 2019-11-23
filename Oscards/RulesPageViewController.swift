@@ -12,6 +12,9 @@ class RulesPageViewController : UIViewController{
 override func viewDidLoad() {
     
         super.viewDidLoad()
+    
+    self.view.backgroundColor = UIColor(patternImage: UIImage(named: "RulesSingleplayer.png")!)
+    
     let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
     rightSwipe.direction = .right
     let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
@@ -27,12 +30,16 @@ override func viewDidLoad() {
     @objc func handleSwipe(sender : UISwipeGestureRecognizer){
         if sender.state == .ended{
             switch sender.direction {
-            case .right:
-                textArea.text = "Rules Multiplayer rules multiplayer rules multiplayer Rules Multiplayer rules multiplayer rules multiplayer Rules Multiplayer rules multiplayer rules multiplayer Rules Multiplayer rules multiplayer rules multiplayer Rules Multiplayer rules multiplayer rules multiplayer Rules Multiplayer rules multiplayer rules multiplayer Rules Multiplayer rules multiplayer rules multiplayer Rules Multiplayer rules multiplayer rules multiplayer Rules Multiplayer rules multiplayer rules multiplayer Rules Multiplayer rules multiplayer rules multiplayer  "
-                dots.currentPage = 0
             case .left:
-                               textArea.text = "Rules Singleplayer rules singleplayer rules singleplayer Rules Singleplayer rules singleplayer rules singleplayer Rules Singleplayer rules singleplayer rules singleplayer Rules Singleplayer rules singleplayer rules singleplayer Rules Singleplayer rules singleplayer rules singleplayer Rules Singleplayer rules singleplayer rules singleplayer Rules Singleplayer rules singleplayer rules singleplayer Rules Singleplayer rules singleplayer rules singleplayer Rules Singleplayer rules singleplayer rules singleplayer Rules Singleplayer rules singleplayer rules singleplayer  "
-                               dots.currentPage = 1
+                self.view.backgroundColor = UIColor(patternImage: UIImage(named: "RulesMultiplayer.png")!)
+
+                textArea.text = "The Goal of the game is to reach the Oscar and for you to do that you need to be smart but also have fast fingers! Write down the names of the movies before time runs out! \n\nFrom four to eight players (teams of twos) \n\nOne team will start randomly and from there each will earn points every round, where the team who gained the most shall win the Oscar. The path to stardom is hard, the two teammates, having four cards, have to come up with the same title and write it down. Pay attention, you can’t use titles already used before!"
+                dots.currentPage = 1
+            case .right:
+                self.view.backgroundColor = UIColor(patternImage: UIImage(named: "RulesSingleplayer.png")!)
+
+                               textArea.text = "Do you think you’re the most knowledgeable cinema fan? Write down the names of the movies before time runs out!\n\nSingle Player\n\nEvery set of cards is a different movie. Check and see if you know them all!"
+                               dots.currentPage = 0
             default:
                 break
             }
