@@ -918,12 +918,11 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rulesbtn1" translatesAutoresizingMaskIntoConstraints="NO" id="YV7-hz-Zze">
                                 <rect key="frame" x="138" y="182" width="138" height="60"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-0k-Hwe">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-0k-Hwe">
                                 <rect key="frame" x="39" y="250" width="336" height="519"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Do you think you’re the most knowledgeable cinema fan? Write down the names of the movies before time runs out!
+                                <string key="text">Do you think you’re the biggest cinema fan? Find what movie the four cards are describing and write down the name before time runs out! You only have 1 min and you can play as many times as you want to achieve a higher score everytime!
 
-Single Player 
 
 Every set of cards is a different movie. Check and see if you know them all!</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -968,6 +967,9 @@ Every set of cards is a different movie. Check and see if you know them all!</st
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Ifh-eL-Bcw">
+                                <rect key="frame" x="20" y="182" width="374" height="562"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr4-yI-os4">
                                 <rect key="frame" x="274" y="248" width="54" height="54"/>
                                 <constraints>
@@ -1046,7 +1048,7 @@ Every set of cards is a different movie. Check and see if you know them all!</st
                                 </state>
                                 <connections>
                                     <action selector="playButtonPressed:" destination="GIY-JE-xVF" eventType="touchUpInside" id="Xq8-GH-ljP"/>
-                                    <segue destination="cXa-6t-hfn" kind="push" id="4Cd-Gd-BXR"/>
+                                    <segue destination="cXa-6t-hfn" kind="show" id="4Cd-Gd-BXR"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="charlie" translatesAutoresizingMaskIntoConstraints="NO" id="lXc-Sb-bVx">
@@ -1094,9 +1096,6 @@ Every set of cards is a different movie. Check and see if you know them all!</st
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0wV-VY-223"/>
                                 </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Ifh-eL-Bcw">
-                                <rect key="frame" x="20" y="182" width="374" height="562"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99954873323440552" green="0.9235571026802063" blue="0.7607538104057312" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
