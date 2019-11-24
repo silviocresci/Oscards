@@ -17,8 +17,7 @@ class SinglePlayerStartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+          self.view.backgroundColor = UIColor(patternImage: UIImage(named: "shakeback")!)
         userScore = 0
         actualRound = 1
         indexArray = 0

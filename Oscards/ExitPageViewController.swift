@@ -13,7 +13,6 @@ class ExitPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
     

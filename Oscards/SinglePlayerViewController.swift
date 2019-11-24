@@ -39,7 +39,6 @@ class SinglePlayerViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         card1.image = UIImage(named: movieArray[randomArrayIndex[indexArray]].image1)
         card2.image = UIImage(named: movieArray[randomArrayIndex[indexArray]].image2)
         card3.image = UIImage(named: movieArray[randomArrayIndex[indexArray]].image3)
