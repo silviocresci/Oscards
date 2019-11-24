@@ -519,18 +519,6 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bup-Dl-Hxh">
-                                <rect key="frame" x="159" y="55" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUS-6L-0I6">
-                                <rect key="frame" x="20" y="55" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zit-zY-9bN">
                                 <rect key="frame" x="20" y="195" width="172" height="158"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -572,6 +560,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEb-aN-jzh">
+                                <rect key="frame" x="20" y="55" width="73" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pM1-zy-epa">
+                                <rect key="frame" x="171" y="55" width="73" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hoF-zb-fkW"/>
@@ -583,16 +585,16 @@
                         <outlet property="card3" destination="ckL-U8-ybf" id="7DE-t5-zJv"/>
                         <outlet property="card4" destination="Xl4-KF-xb5" id="c1n-U9-HDB"/>
                         <outlet property="menuButton" destination="iWn-C0-pTC" id="Ctd-kg-YKZ"/>
-                        <outlet property="roundsTextField" destination="Bup-Dl-Hxh" id="dM5-Pg-O3w"/>
+                        <outlet property="roundsTextField" destination="pM1-zy-epa" id="LXo-sH-A2Y"/>
                         <outlet property="singleTextField" destination="gXk-BX-n7t" id="920-cw-pcU"/>
                         <outlet property="singleValidationButton" destination="ge7-Hu-9Dy" id="2rY-hB-yvq"/>
-                        <outlet property="timerArea" destination="bUS-6L-0I6" id="XBS-AK-3MM"/>
+                        <outlet property="timerArea" destination="wEb-aN-jzh" id="bVO-2E-r6e"/>
                         <segue destination="CgS-ug-x9F" kind="showDetail" identifier="Time Over" id="gml-kg-0hB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umz-DJ-LDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-119764" y="-948"/>
+            <point key="canvasLocation" x="-119765.21739130435" y="-948.21428571428567"/>
         </scene>
         <!--Time Over View Controller-->
         <scene sceneID="dVY-cv-xJ7">
@@ -616,16 +618,15 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Next Round"/>
                                 <connections>
+                                    <action selector="buttonPressed:" destination="CgS-ug-x9F" eventType="touchUpInside" id="Py2-cQ-5fy"/>
                                     <action selector="timeOver:" destination="ZVr-mW-Z88" eventType="touchUpInside" id="R6S-U0-3t1"/>
+                                    <segue destination="4kW-8w-2Og" kind="show" identifier="Play Next" id="ebv-JU-FH2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="NNP-co-8K6"/>
                     </view>
-                    <connections>
-                        <segue destination="4kW-8w-2Og" kind="showDetail" id="g4l-tL-F5s"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0wM-mm-UQb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ZVr-mW-Z88" userLabel="Exit" sceneMemberID="exit"/>
@@ -1261,9 +1262,10 @@ Every set of cards is a different movie. Check and see if you know them all!</st
         <image name="woody" width="236" height="378"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bMe-ba-B9N"/>
+        <segue reference="gml-kg-0hB"/>
+        <segue reference="exF-Ha-6Q3"/>
         <segue reference="3Eb-Oe-nF5"/>
-        <segue reference="g4l-tL-F5s"/>
+        <segue reference="ebv-JU-FH2"/>
         <segue reference="8rX-2t-8lO"/>
     </inferredMetricsTieBreakers>
 </document>

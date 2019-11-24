@@ -16,6 +16,7 @@ struct Movie {
     var image4: String
     var title: String
 }
+let resultArray = Array(resultSet)
 
 var numRounds: Int = 10
 var actualRound: Int = 1
@@ -24,6 +25,7 @@ var userScore: Int = 0
 
 var randomArrayIndex: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 var indexArray: Int = 0
+var resultSet = Set<String>()
 
 let movie1 = Movie(image1: "1-1", image2: "1-2", image3: "1-3", image4: "1-4", title: "KILL BILL")
 let movie2 = Movie(image1: "2-1", image2: "2-2", image3: "2-3", image4: "2-4", title: "GRAND HOTEL BUDAPEST")
@@ -47,7 +49,3 @@ let movie19 = Movie(image1: "19-1", image2: "19-2", image3: "19-3", image4: "19-
 let movie20 = Movie(image1: "20-1", image2: "20-2", image3: "20-3", image4: "20-4", title: "BLACK SWAN")
 
 var movieArray = [movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10, movie11, movie12, movie13, movie14, movie15, movie16, movie17, movie18, movie19, movie20]
-
-
-
-

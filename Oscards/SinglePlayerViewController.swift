@@ -16,8 +16,8 @@ class SinglePlayerViewController : UIViewController {
     @IBOutlet weak var singleValidationButton: UIButton!
     @IBOutlet weak var singleTextField: UITextField!
     @IBOutlet weak var menuButton: UIButton!
-    @IBOutlet weak var timerArea: UITextField!
-    @IBOutlet weak var roundsTextField: UITextField!
+    @IBOutlet weak var timerArea: UILabel!
+    @IBOutlet weak var roundsTextField: UILabel!
     @IBOutlet weak var card1: UIImageView!
     @IBOutlet weak var card2: UIImageView!
     @IBOutlet weak var card3: UIImageView!

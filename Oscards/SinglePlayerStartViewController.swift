@@ -22,9 +22,9 @@ class SinglePlayerStartViewController: UIViewController {
         userScore = 0
         actualRound = 1
         indexArray = 0
-        for i in 0..<movieArray.count {
-            randomArrayIndex[i] = Int.random(in: 0..<movieArray.count)
-        }
+//        for i in 0..<movieArray.count {
+//            randomArrayIndex[i] = Int.random(in: 0..<movieArray.count)
+//        }
         
     }
     
