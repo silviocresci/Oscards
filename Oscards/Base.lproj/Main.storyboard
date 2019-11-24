@@ -787,7 +787,7 @@
             <objects>
                 <viewController id="OJe-32-IMY" customClass="SinglePlayerStartViewController" customModule="Oscards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8dh-4N-POU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OXy-1Q-rXP">
@@ -808,7 +808,7 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Shake to play!"/>
                                 <connections>
-                                    <segue destination="4kW-8w-2Og" kind="show" identifier="Start Single Game" id="BNU-bD-yWY"/>
+                                    <segue destination="4kW-8w-2Og" kind="showDetail" identifier="Start Single Game" id="BNU-bD-yWY"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please select the number of rounds for this game session!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="K2R-TB-0vA">
@@ -1291,9 +1291,8 @@ Every set of cards is a different movie. Check and see if you know them all!</st
         <image name="tocheck" width="58" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hPj-dc-hfH"/>
         <segue reference="exF-Ha-6Q3"/>
-        <segue reference="mWc-Dd-3bL"/>
+        <segue reference="3Eb-Oe-nF5"/>
         <segue reference="BNU-bD-yWY"/>
         <segue reference="XKF-tL-K45"/>
     </inferredMetricsTieBreakers>
