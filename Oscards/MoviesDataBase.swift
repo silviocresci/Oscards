@@ -16,7 +16,8 @@ struct Movie {
     var image4: String
     var title: String
 }
-let resultArray = Array(resultSet)
+
+var highScore = UserDefaults.standard.integer(forKey: "High Score Saved")
 
 var numRounds: Int = 10
 var actualRound: Int = 1
@@ -25,7 +26,6 @@ var userScore: Int = 0
 
 var randomArrayIndex: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 var indexArray: Int = 0
-var resultSet = Set<String>()
 
 let movie1 = Movie(image1: "1-1", image2: "1-2", image3: "1-3", image4: "1-4", title: "KILL BILL")
 let movie2 = Movie(image1: "2-1", image2: "2-2", image3: "2-3", image4: "2-4", title: "THE GRAND HOTEL BUDAPEST")

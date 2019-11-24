@@ -11,28 +11,31 @@ import UIKit
 class SinglePlayerScoreViewController: UIViewController {
 
     @IBOutlet weak var newGameButton: UIButton!
-    @IBOutlet weak var newScore: UITextField!
-    @IBOutlet weak var firstScore: UITextField!
-    @IBOutlet weak var secondScore: UITextField!
-    @IBOutlet weak var thirdScore: UITextField!
-    
+    @IBOutlet weak var newScore: UILabel!
+    @IBOutlet weak var firstScore: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         newScore.text = "\(userScore) 👏"
+        ShowHighScore()
+    }
+    
+    func ShowHighScore() {
+           if (userScore > highScore) {
+                   highScore = userScore;
+                   UserDefaults.standard.integer(forKey: "High Score Saved")
+               }
+        firstScore.text = String(highScore)
+        
     }
     
 
    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
        performSegue(withIdentifier: "Play Again", sender: self)
-   }
+    }
 
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    
-
 }
