@@ -17,6 +17,16 @@ class ExitPageViewController: UIViewController {
         
     }
     
+    @IBAction func yesButtonPressed(_ sender: UIButton) {
+//        let newViewController: HomeViewController = storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+//        self.navigationController?.pushViewController(newViewController, animated: true)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let vc = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController // MySecondSecreen the storyboard ID
+        self.present(vc, animated: true, completion: nil);
+        
+    }
+    
     @IBAction func noExitViewController(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
