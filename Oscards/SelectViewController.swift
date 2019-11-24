@@ -60,6 +60,7 @@ func enableButton(){
     
     sender.isSelected = true
     setNumb()
+    enableButton()
     
 }
     func setNumb(){
