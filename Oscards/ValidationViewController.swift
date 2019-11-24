@@ -15,20 +15,31 @@ class ValidationViewController : UIViewController{
     var img4 : UIImageView!
 
 
-    @IBOutlet weak var teamLabel: UILabel!
+//    @IBOutlet weak var teamLabel: UILabel!
     @IBOutlet weak var view1: UIImageView!
     @IBOutlet weak var view2: UIImageView!
     @IBOutlet weak var view3: UIImageView!
     @IBOutlet weak var view4: UIImageView!
     
-
+    @IBOutlet weak var img: UIImageView!
+    
     @IBOutlet weak var text: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let actualTeam: Team = GameSession.singleton.getTeamByNumber(number: GameSession.singleton.actualTurn)
-        teamLabel.text = actualTeam.nameTeam + " wrote"
+//        teamLabel.text = actualTeam.nameTeam + " wrote"
+        
+        if(actualTeam.nameTeam == "Marilyn Team"){
+                   img.image = UIImage(named: "marylin")
+               }else if(actualTeam.nameTeam == "Chaplin Team"){
+                   img.image = UIImage(named: "charlie")
+               }else if(actualTeam.nameTeam == "Heisenberg Team"){
+                   img.image = UIImage(named: "heise")
+               }else if(actualTeam.nameTeam == "Kaonashi Team"){
+                   img.image = UIImage(named: "kaonashi")
+               }
         
         nav.setHidesBackButton(true, animated: true)
         view1.image = img1.image
