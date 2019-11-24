@@ -1262,10 +1262,9 @@ Every set of cards is a different movie. Check and see if you know them all!</st
         <image name="woody" width="236" height="378"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gml-kg-0hB"/>
-        <segue reference="exF-Ha-6Q3"/>
-        <segue reference="3Eb-Oe-nF5"/>
-        <segue reference="ebv-JU-FH2"/>
+        <segue reference="bMe-ba-B9N"/>
+        <segue reference="mWc-Dd-3bL"/>
+        <segue reference="mxT-ZP-Lrj"/>
         <segue reference="8rX-2t-8lO"/>
     </inferredMetricsTieBreakers>
 </document>

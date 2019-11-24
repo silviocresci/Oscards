@@ -28,7 +28,7 @@ var indexArray: Int = 0
 var resultSet = Set<String>()
 
 let movie1 = Movie(image1: "1-1", image2: "1-2", image3: "1-3", image4: "1-4", title: "KILL BILL")
-let movie2 = Movie(image1: "2-1", image2: "2-2", image3: "2-3", image4: "2-4", title: "GRAND HOTEL BUDAPEST")
+let movie2 = Movie(image1: "2-1", image2: "2-2", image3: "2-3", image4: "2-4", title: "THE GRAND HOTEL BUDAPEST")
 let movie3 = Movie(image1: "3-1", image2: "3-2", image3: "3-3", image4: "3-4", title: "THE TRUMAN SHOW")
 let movie4 = Movie(image1: "4-1", image2: "4-2", image3: "4-3", image4: "4-4", title: "AMERICAN BEAUTY")
 let movie5 = Movie(image1: "5-1", image2: "5-2", image3: "5-3", image4: "5-4", title: "LEON THE PROFESSIONAL")
