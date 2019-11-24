@@ -16,6 +16,7 @@ class ScoreViewController : UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "backrules")!)
         
         roundsLabel.text = "Final Score " + String(GameSession.singleton.finalScore)
         

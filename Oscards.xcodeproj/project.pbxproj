@@ -19,6 +19,7 @@
 		6BAF86E0237BF5180068C85C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86DE237BF5180068C85C /* Main.storyboard */; };
 		6BAF86E2237BF5190068C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86E1237BF5190068C85C /* Assets.xcassets */; };
 		6BAF86E5237BF5190068C85C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BAF86E3237BF5190068C85C /* LaunchScreen.storyboard */; };
+		6BF1D4A2238B40850005FA86 /* ExitMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF1D4A1238B40850005FA86 /* ExitMViewController.swift */; };
 		D01B008E23858B1200F9D692 /* ValidationPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01B008D23858B1200F9D692 /* ValidationPageController.swift */; };
 		D03B820A237D9166002D9AA4 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8202237D9165002D9AA4 /* GameSession.swift */; };
 		D03B820B237D9166002D9AA4 /* ShakePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B8203237D9165002D9AA4 /* ShakePageController.swift */; };
@@ -51,6 +52,7 @@
 		6BAF86E1237BF5190068C85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BAF86E4237BF5190068C85C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BAF86E6237BF5190068C85C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BF1D4A1238B40850005FA86 /* ExitMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitMViewController.swift; sourceTree = "<group>"; };
 		D01B008D23858B1200F9D692 /* ValidationPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationPageController.swift; sourceTree = "<group>"; };
 		D03B8202237D9165002D9AA4 /* GameSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
 		D03B8203237D9165002D9AA4 /* ShakePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakePageController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				6BAF86E3237BF5190068C85C /* LaunchScreen.storyboard */,
 				6B27FDE323840A01004E9E31 /* LoseViewController.swift */,
 				6BAF86DE237BF5180068C85C /* Main.storyboard */,
+				6BF1D4A1238B40850005FA86 /* ExitMViewController.swift */,
 				DDEC19A32389AE9600F4A7B4 /* MoviesDataBase.swift */,
 				6B27FDD72383E46E004E9E31 /* RulesPageViewController.swift */,
 				6BAF86DA237BF5180068C85C /* SceneDelegate.swift */,
@@ -221,6 +224,7 @@
 				DDF59139238AA1EE00F8CE46 /* TimeOverViewController.swift in Sources */,
 				6BAF86D9237BF5180068C85C /* AppDelegate.swift in Sources */,
 				D01B008E23858B1200F9D692 /* ValidationPageController.swift in Sources */,
+				6BF1D4A2238B40850005FA86 /* ExitMViewController.swift in Sources */,
 				DDEC19AC2389AFE900F4A7B4 /* ExitPageViewController.swift in Sources */,
 				6BAF86DB237BF5180068C85C /* SceneDelegate.swift in Sources */,
 				6B27FDE02383E7B3004E9E31 /* ShakeViewController.swift in Sources */,
