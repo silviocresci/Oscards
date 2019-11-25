@@ -27,6 +27,9 @@ class ExitPageViewController: UIViewController {
     }
     
     @IBAction func noExitViewController(_ sender: Any) {
+        if (actualRound > numRounds) {
+            
+        }
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }
