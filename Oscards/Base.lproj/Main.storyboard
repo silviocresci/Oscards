@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1j-tV-bxa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T1j-tV-bxa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1088,7 +1088,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rulesrectan" translatesAutoresizingMaskIntoConstraints="NO" id="FC2-Jh-fss">
-                                <rect key="frame" x="8" y="120" width="398" height="648"/>
+                                <rect key="frame" x="-191" y="120" width="796" height="1296"/>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="zGd-Mr-4i0">
                                 <rect key="frame" x="188" y="798" width="39" height="37"/>
@@ -1096,16 +1096,16 @@
                                 <color key="currentPageIndicatorTintColor" red="0.91289037466049194" green="0.72562545537948608" blue="0.250794917345047" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </pageControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rules" translatesAutoresizingMaskIntoConstraints="NO" id="zX2-zi-jdT">
-                                <rect key="frame" x="86" y="18" width="242" height="50"/>
+                                <rect key="frame" x="-35" y="18" width="484" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Lo6-M3-1zH"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rulesbtn1" translatesAutoresizingMaskIntoConstraints="NO" id="YV7-hz-Zze">
-                                <rect key="frame" x="138" y="94" width="138" height="60"/>
+                                <rect key="frame" x="69" y="94" width="276" height="120"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-0k-Hwe">
-                                <rect key="frame" x="39" y="162" width="336" height="553"/>
+                                <rect key="frame" x="39" y="222" width="336" height="493"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Do you think you’re the biggest cinema fan? Find what movie the four cards are describing and write down the name before time runs out! You only have 1 min and you can play as many times as you want to achieve a higher score everytime!
 
@@ -1157,7 +1157,7 @@ Every set of cards is a different movie. Check and see if you know them all!</st
                                 <rect key="frame" x="20" y="182" width="374" height="562"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="number" translatesAutoresizingMaskIntoConstraints="NO" id="Gun-zU-3me">
-                                <rect key="frame" x="20" y="32" width="155" height="50"/>
+                                <rect key="frame" x="20" y="32" width="310" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0wV-VY-223"/>
                                 </constraints>
@@ -1404,7 +1404,7 @@ Every set of cards is a different movie. Check and see if you know them all!</st
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tHj-kh-rFr">
-                                <rect key="frame" x="57" y="353" width="300" height="136"/>
+                                <rect key="frame" x="57" y="319" width="300" height="204"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Woody Allen Team wrote different or already used titles." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rg-Ic-ZTG">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="53"/>
@@ -1413,7 +1413,7 @@ Every set of cards is a different movie. Check and see if you know them all!</st
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8V-rA-fKv">
-                                        <rect key="frame" x="0.0" y="68" width="300" height="68"/>
+                                        <rect key="frame" x="0.0" y="68" width="300" height="136"/>
                                         <state key="normal" image="scoresbtn (2)">
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
@@ -1452,7 +1452,7 @@ Every set of cards is a different movie. Check and see if you know them all!</st
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="screencard" translatesAutoresizingMaskIntoConstraints="NO" id="mXy-rf-ZYG">
-                                <rect key="frame" x="8" y="97" width="398" height="648"/>
+                                <rect key="frame" x="-191" y="-227" width="796" height="1296"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="ultraLight"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you wanna exit?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zs-2D-DfF">
@@ -1547,7 +1547,8 @@ Every set of cards is a different movie. Check and see if you know them all!</st
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="cch-uf-TJN"/>
-        <segue reference="bMe-ba-B9N"/>
+        <segue reference="hPj-dc-hfH"/>
+        <segue reference="exF-Ha-6Q3"/>
         <segue reference="mWc-Dd-3bL"/>
         <segue reference="mxT-ZP-Lrj"/>
         <segue reference="WT0-w5-cAD"/>

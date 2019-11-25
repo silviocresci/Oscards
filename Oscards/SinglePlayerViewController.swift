@@ -39,6 +39,14 @@ class SinglePlayerViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
         card1.image = UIImage(named: movieArray[randomArrayIndex[indexArray]].image1)
         card2.image = UIImage(named: movieArray[randomArrayIndex[indexArray]].image2)
         card3.image = UIImage(named: movieArray[randomArrayIndex[indexArray]].image3)
@@ -49,6 +57,25 @@ class SinglePlayerViewController : UIViewController {
         configureTapGesture()
         showRounds()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(SinglePlayerViewController.action), userInfo: nil, repeats: true)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     // the function that counts the 1min during the player has to find the title
