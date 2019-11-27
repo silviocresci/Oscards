@@ -28,7 +28,7 @@ var randomArrayIndex: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
 var indexArray: Int = 0
 
 let movie1 = Movie(image1: "1-1", image2: "1-2", image3: "1-3", image4: "1-4", title: "KILL BILL")
-let movie2 = Movie(image1: "2-1", image2: "2-2", image3: "2-3", image4: "2-4", title: "THE GRAND HOTEL BUDAPEST")
+let movie2 = Movie(image1: "2-1", image2: "2-2", image3: "2-3", image4: "2-4", title: "THE GRAND BUDAPEST HOTEL")
 let movie3 = Movie(image1: "3-1", image2: "3-2", image3: "3-3", image4: "3-4", title: "THE TRUMAN SHOW")
 let movie4 = Movie(image1: "4-1", image2: "4-2", image3: "4-3", image4: "4-4", title: "AMERICAN BEAUTY")
 let movie5 = Movie(image1: "5-1", image2: "5-2", image3: "5-3", image4: "5-4", title: "LEON THE PROFESSIONAL")
@@ -36,7 +36,7 @@ let movie6 = Movie(image1: "6-1", image2: "6-2", image3: "6-3", image4: "6-4", t
 let movie7 = Movie(image1: "7-1", image2: "7-2", image3: "7-3", image4: "7-4", title: "CHARLIE AND THE CHOCOLATE FACTORY")
 let movie8 = Movie(image1: "8-1", image2: "8-2", image3: "8-3", image4: "8-4", title: "FORREST GUMP")
 let movie9 = Movie(image1: "9-1", image2: "9-2", image3: "9-3", image4: "9-4", title: "LA LA LAND")
-let movie10 = Movie(image1: "10-1", image2: "10-2", image3: "10-3", image4: "10-4", title: "LORD OF THE RINGS")
+let movie10 = Movie(image1: "10-1", image2: "10-2", image3: "10-3", image4: "10-4", title: "THE LORD OF THE RINGS")
 let movie11 = Movie(image1: "11-1", image2: "11-2", image3: "11-3", image4: "11-4", title: "TRAINSPOTTING")
 let movie12 = Movie(image1: "12-1", image2: "12-2", image3: "12-3", image4: "12-4", title: "THE WOLF OF WALL STREET")
 let movie13 = Movie(image1: "13-1", image2: "13-2", image3: "13-3", image4: "13-4", title: "GREASE")
